@@ -1,0 +1,29 @@
+Commands to install and run Redis Server in local:
+First step download and install Docker Desktop.
+Run the Powersheell as Administrator.
+Verify Docker is running:
+CMD: docker --version
+
+Then run below commands:
+1. docker pull redis
+2. docker run --name redis-server -d -p 6379:6379 redis
+3. docker ps
+4. docker exec -it redis-server redis-cli
+
+To verify Redis is running in local just type ping in powershell.
+PONG
+
+
+Important Commands:
+keys *  -> To verify all the key entries.
+del keyName  ->  To delete specific key.
+get keyName -> To view specific key value.
+set key value -> To create an entry.
+exists key -> Check if key exists.
+
+Reference link:
+https://www.geeksforgeeks.org/installation-guide/installation-and-starting-the-servers-of-redis-stack-using-docker/
+
+https://www.geeksforgeeks.org/advance-java/spring-boot-caching-with-redis/
+
+
